@@ -2,7 +2,7 @@ const {StatusCodes}=require('http-status-codes')
 
 class ValidationError extends Error {
     cosntructor(error){
-        super();
+        //super();
         let explanation=[];
         error.errors.forEach((err)=>{
             explanation.push(err.message);
